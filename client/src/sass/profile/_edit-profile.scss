@@ -1,0 +1,69 @@
+.edit-profile{
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem 0;
+    }
+
+    &__form{
+        width: 62rem;
+        padding: 2rem 0 4rem 0;
+        background: white;
+        box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title{
+        margin: 1rem 0 2rem 0;
+        font-size: 4rem;
+    }
+
+    &__group{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__label{
+        position: absolute;
+        left: 15.5%;
+        bottom: 0;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        transition: all .3s;
+    }
+
+    &__item{
+        width: 70%;
+        margin: 1.7rem;
+        font-family: inherit;
+    }
+
+    &__input{
+        padding: .5rem;
+        font-size: 1.5rem;
+        border: 1px solid $color-gray;
+        border-radius: 3px;
+
+        &:placeholder-shown ~ .edit-profile__label{
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-3rem);
+        }
+
+    }
+
+    &__area{
+        resize: none;
+        height: 15rem;
+        border: 1px solid $color-gray;
+        padding: .5rem;
+        border-radius: 3px;
+    }
+
+}

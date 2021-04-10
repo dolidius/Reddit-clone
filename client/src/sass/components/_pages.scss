@@ -1,0 +1,22 @@
+.pages{
+    padding: 0 4rem 2rem 4rem;
+    display: flex;
+}
+
+.page{
+    display: inline-block;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: white;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+    &:not(:first-child){
+        margin-left: 1rem;
+    }
+
+}

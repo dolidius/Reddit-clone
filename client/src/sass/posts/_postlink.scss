@@ -1,0 +1,72 @@
+.postlink{
+    width: 100%;
+    height: 11rem;
+    background: white;
+    padding: 1rem;
+    display: flex;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+    border-radius: 2px;
+
+    &:not(:first-child){
+        margin: 1rem 0;
+    }
+
+    &__vote{
+
+        &-container{
+            display: flex;
+            align-items: center;
+            width: 5%;
+            height: 100%;
+            font-size: 1.2rem;
+            padding-left: 1rem;
+        }
+
+    }
+
+
+    &__photo{
+        width: 11rem;
+        height: 80%;
+        align-self: center;
+        background: white;
+        border: 2px solid #C2C2C5;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i{
+            font-size: 2rem;
+            color: #76777B;
+        }
+
+    }
+
+    &__info{
+        padding-top: .8rem;
+        padding-left: 2rem;
+        max-width: 80%;
+    }
+
+    &__title{
+        font-size: 1.7rem;
+        font-weight: 500;
+    }
+
+    &__subreddit{
+        font-size: 1.2rem;
+        padding: .2rem;
+        font-weight: bold;
+    }
+
+    &__link{
+        font-size: 1.2rem;
+
+        &:not(:first-child){
+            margin: 0 1rem;
+        }
+
+    }
+
+}

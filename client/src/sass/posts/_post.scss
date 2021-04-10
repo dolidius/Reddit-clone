@@ -1,0 +1,56 @@
+.post{
+    width: 100%;
+    padding: 4rem 0;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+
+    &__container{
+        display: flex;
+        padding: 4rem;
+    }
+
+    &__header{
+        padding-left: 7rem;
+        position: relative;
+    }
+
+    &__vote-container{
+        position: absolute;
+        left: 2.5rem;
+        top: .5rem;
+        font-size: 1.5rem;
+    }
+
+    &__title{
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    &__text{
+        padding: 1.5rem 25rem 1rem 7rem;
+        font-size: 1.45rem;
+    }
+
+    &__add-comment{
+        padding: 3rem 15rem 1rem 7rem;
+
+        textarea{
+            resize: none;
+            width: 100%;
+            height: 15rem;
+            border: 1px solid $color-gray;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 1rem 1.5rem;
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+        }
+
+    }
+
+    &__comments{
+        padding: 5rem 7rem;
+    }
+
+}

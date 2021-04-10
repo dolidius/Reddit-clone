@@ -1,0 +1,28 @@
+.spinner{
+    
+    &__container{
+        display: flex;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+
+    &:before{
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        height: 30rem;
+        width: 30rem;
+        border-radius: 50%;
+        margin-left: -15rem;
+        border-top: 4px solid $color-blue;
+        border-right: 3px solid transparent;
+        animation: spinner 0.7s linear infinite;
+    }
+
+}
+
+@keyframes spinner {
+    to{
+        transform: rotate(360deg);
+    }
+}

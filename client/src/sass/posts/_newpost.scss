@@ -1,0 +1,35 @@
+.newpost{
+    width: 50%;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
+    text-align: center;    
+
+    &__container{
+        display: flex;
+        justify-content: center;
+        padding: 5rem;
+    }
+
+    &__title{
+        font-size: 4.5rem;
+        padding: 1rem;
+    }
+
+    &__item{
+        margin: 1rem;
+        width: 75%;
+    }
+
+    &__input{
+        font-size: 1.6rem;
+        padding: .5rem;
+        font-family: inherit;
+    }
+
+    &__area{
+        resize: none;
+        height: 20rem;
+    }
+
+}
